@@ -5,6 +5,9 @@
         box-sizing: border-box;
     }
     html {
+        /* hiệu ứng chuyển động lướt web  */
+        scroll-behavior: smooth;
+         /* hiệu ứng chuyển động lướt web  */
         font-family: Arial, Helvetica, sans-serif;
     }
     :root {  
