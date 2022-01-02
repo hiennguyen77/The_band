@@ -1,0 +1,527 @@
+    /* reset css */
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    html {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    :root {  
+        --color: #000
+    }
+    .clear {
+        clear:both;
+    }
+
+  
+    /* START-HEADER   */
+    #header{
+    height: 46px;  
+    background-color: var(--color);
+    position: relative;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    /* (nổi lên theo trục z) */
+    }
+    .nav {
+        display: inline-block;
+    }
+    .item {
+        float: left;
+        position: relative;
+        height: 46px;
+    
+    }
+    .item > a {
+        color: #fff;
+        text-transform: uppercase;
+        height: 46px;
+
+    }
+    .item a {
+        text-decoration: none;
+        
+        display: block;
+        padding: 15px 22px;
+    
+    }
+    .item:hover > a {
+        color: #000;
+        background-color: #ccc;
+    }
+    .item .item-arrow-down {
+        font-size: 14px;
+    }
+
+    .subnav {
+        position: absolute;
+        background-color: #fff;
+        display: none;
+        width: 150px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        top: 46px ;
+        
+    }
+    .item:hover > .subnav {
+        display: block;
+    } 
+
+    .subnav a {
+        color: #000;
+    }
+    .subnav-item:hover >a {
+
+        color: #000;
+        background-color: #ccc;
+    
+    }
+    .subnav-item > a {
+        padding: 10px;
+    }
+    .search {
+        width: 60px;
+        height: 46px;
+        background-color:rgba(255, 0, 0,0);
+        position: absolute;
+        top: 0px;
+        right: 0px; 
+        margin-left: 10px;
+        
+    }
+    .icon-search {
+        font-size: 15px;
+        display: block;
+        padding: 16px 22px;
+        color: #fff;
+        
+        
+    }
+   .search:hover {
+        background-color: rgb(245, 60, 60);
+        cursor: pointer;
+
+    }
+    
+    /* END-HEADER */
+    /* START-SLIDER  */
+
+    #slider {
+        position: relative;
+        padding-top: 50%;
+        margin-top: 46px;
+        background: url(/assets/img/slider/chicago.jpg) top center / cover no-repeat;
+    }
+ 
+    .content-slider {
+        position: absolute;
+        color: #fff;
+        bottom: 47px;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%);
+        
+           
+    }
+    .content-slider h2 {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size:  24px;
+    }
+    .content-slider span {
+        font-size: 15px;
+    }
+    /* END-SLIDER */
+
+    /* START-CONTENT  */
+    #content{
+    
+    }
+    #content .conten-section {
+        width: 800px;
+        padding: 64px 0px;
+        margin-left: auto;
+        margin-right: auto;
+        
+
+    }
+    #content .section-heading,
+    #content .section-sub-heading {
+        text-align: center;
+    }
+
+
+    #content .section-heading {
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        margin: 10px 0px;
+        
+
+    }
+    #content .section-sub-heading {
+        display: block;
+        font-size: 15px;
+        opacity: 0.6;
+        margin-top: 15px ;
+     }
+     #content .about-content {
+         font-size: 15px;
+         line-height: 1.4;
+         text-align: justify;
+         margin: 15px 0px;
+     }
+     #content .list-iteam {
+        float: left;
+        width: 33.33333%;
+        text-align: center;
+    }
+        
+    #content .band-iteam {
+        padding:32px 0px;
+    }
+   #content .band-name {
+       margin: 15px 0px;
+       font-size: 16px;
+   }
+   #content .band-img {
+       width: 154px;
+       border-radius: 4px;
+   }
+   #content .background-tour {
+       background-color: #000;
+       height: 840px;
+       
+      
+       
+   }
+   .background-tour .section-heading,
+   .background-tour .section-sub-heading {
+       color: #fff;
+   
+
+   }
+   .background-tour .section-sub-heading {
+       margin-bottom: 40px;
+   }
+ 
+ 
+   #content .tour-section {
+       width: 800px;
+      margin-right: auto;
+      margin-left:auto;
+      position: relative;
+      top: 80px;
+      
+   }
+
+   #content .list-time li {
+       background-color: #fff;
+       padding: 8px 16px;
+       font-size: 15px;
+       height: 39px;
+       border-bottom: 1px solid rgb(226, 216, 216); 
+       color: rgb(126, 126, 126);
+       list-style: none;  
+   }
+   #content .sold-out {
+       padding: 0px 8px;
+       margin: 0px 0px 0px 16px;
+       color: #fff;
+       background-color: #f44336;
+       font-size: 15px;
+       height: 22px;
+       display: inline-block;
+       padding-top: 2px;
+   }
+   #content .number {
+       float: right;
+       margin-right: 16px;
+       background-color: #000;
+       color: #fff;
+       display: inline-block;
+       padding: 3px 8px;
+       text-align: center;
+       border-radius: 50%;
+   }
+   #content .row {
+       padding: 32px 0px;
+       margin-right: -8px;
+       margin-left: -8px;
+       
+       
+       
+       
+       
+   }
+   #content .row-iteam {
+      
+       width: 33.33333%;
+       float: left;
+       margin-bottom: 16px;
+       padding: 0px 8px;     
+       
+   }
+   #content .row-iteam img {
+       width: 100%;
+       display: block;
+          
+   }
+   #content .row-iteam img:hover {
+       opacity: 0.5;
+   }
+   #content .row-infor {
+       padding: 0.15px 16px;
+       background-color: #fff;
+       
+   }
+
+   #content .row-name,
+   #content .row-time,
+    #content .row-paragrap {
+       color: #000;
+       font-size: 15px;
+       margin: 15px 0px;
+       line-height: 1.5;
+   }
+   #content .row-time {
+       opacity: 0.5;
+   }
+   #content .row-btn {
+       width: 109px;
+       height: 38px;
+       margin-bottom: 16px;
+       padding: 8px 16px;
+       background-color: #000;
+       color: #fff;
+       border: none;
+       font-size: 15px;
+       
+
+   }
+   #content .row-btn:hover {
+       color: #000;
+       background-color: #ccc;
+       cursor: pointer;
+   }
+   /* phần contact */
+   .contact-section {
+       padding-top: 70px;
+       padding-bottom: 80px;
+   }
+   .contact-container {
+       width: 800px;
+       
+       margin-right: auto;
+       margin-left: auto;
+     padding-top: 45px;
+   }
+   .info-contact {
+       float: left;
+       width: 50%;
+       
+       margin-bottom: 16px;     
+   }
+   .info-contact> p {
+       font-size: 18px;
+      padding-top: 8px;
+      padding-bottom: 3px;
+    
+       
+   }
+   .info-contact i {
+       margin-right: 5px;
+   }
+ 
+
+
+   .col-contol-name,
+    .col-contol-email, 
+    .col-contol-message {
+        font-size: 15px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        outline: none;
+    }
+   .col-contol-name,
+    .col-contol-email {
+       width: 190px;
+       height: 40px;  
+   }
+   .col-contol-name {
+       margin-right: 15px;
+   }
+   .col-contol-message {
+      width: 100%;
+      height: 40px;
+  } 
+   
+.col-contact-input {
+    display: inline-block;
+    padding: 8px 0;  
+   
+}
+.submit-btn {
+    float: right;
+    font-size: 15px;
+    margin: 8px 0;
+    padding: 8px 16px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    
+}
+.submit-btn:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+.map-img {
+    max-width: 100%;
+    padding-top: 50%;
+    
+    background: url(/assets/img/map/map.jpg) top center / cover no-repeat;
+
+}
+/* end -contact   */
+/* END CONTENT  */
+/* phần footer  */
+.footer-container  {
+    text-align: center;
+    padding: 64px 16px;
+    
+  
+}
+.footer-container i {
+    display: inline-block;
+    opacity: 0.6;
+    
+}
+.footer-content {
+    margin: 15px;
+    font-size: 15px;
+    opacity: 0.5;
+}
+.footer-content a {
+    color: #000;
+}
+/* END footer  */
+
+ 
+ 
+
+
+
+
+
+
+
+
+  
+ 
+    
+/* START MODAL PAY  */
+   
+    .modal {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            position: fixed;
+            background: rgba(0, 0, 0, 0.4); 
+            display: none;  
+            align-items: center;
+            justify-content: center;
+    }
+    .open {
+        display: flex;
+    }
+
+    @keyframes modalFadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-150px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .modal-container {
+        background-color: #fff;
+        width: 900px;
+        min-height: 200px;
+        position: relative;
+        animation: modalFadeIn ease 0.4s;
+        
+    }
+    .modal-header {
+        background: #009688;
+        height: 129px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        color: #fff;
+    }
+    .modal-header i {
+        margin-right: 15px;
+    }
+    .modal-closer-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 24px;
+        padding: 10px;
+        color: #fff;
+        opacity: 0.7;
+    }
+    .modal-closer-icon:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+    .modal-body {
+        padding: 16px;
+    }
+    label.modal-lable {
+        display: block;
+        font-size: 15px;
+        margin: 15px 0px;
+       
+    }
+   
+    .modal-input {
+        padding: 11px;
+        width: 100%;
+        border: 1px solid #ccc;
+        font-size: 15px;
+        outline: none;
+    }
+    #pay-btn {
+        width: 100%;
+        background: #009688;
+        border: none;
+        font-size: 15px;
+        color: #fff;
+        margin: 16px 0;
+        padding: 18px;
+        opacity: 0.9;
+    }
+    #pay-btn:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+    .modal-footer {
+        text-align: right;
+        font-size: 15px;
+        margin: 0px 15px 30px 15px;
+    }
+    .modal-footer a {
+        color: #009688;
+    }
+
+ /* END MODAL PAY  */
